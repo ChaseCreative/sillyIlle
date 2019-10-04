@@ -14,7 +14,7 @@ function get(x){
 
   //CHANGE THE NAMES OF THE GAMES HERE
     var game1Title = get("answerOne").innerHTML = "That and Those!";
-    var game2Title = get("answerTwo").innerHTML = "";
+    var game2Title = get("answerTwo").innerHTML = "This and These!";
     var game3Title = get("answerThree").innerHTML = "";
     var game4Title = get("answerFour").innerHTML = "";
 
@@ -22,7 +22,7 @@ function get(x){
 //This sets up the name of the app and four seoparate games
 function appName() {get("boxTwo").innerHTML = "sillyIlle";}
 
-function gameTitle() {get("startButton").innerHTML = "Let's Demonstrate with ILLE";}
+function gameTitle() {get("startButton").innerHTML = "Let's Demonstrate with HIC and ILLE";}
 
 function gameOneTitle() {return game1Title;}
 
@@ -55,23 +55,32 @@ function gameFourTitle(){return game4Title;}
     var perEndingsFirstPlural = ["ae", "ārum", "īs", "ās", "īs", "ae", "ārum", "īs", "ās", "īs"];
 
     var femIlla = [["illa ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illam ", "that (Direct Object) "], ["illā ", "from/with/by/in that "], ["illa ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illam ", "that (Direct Object) "], ["illā ", "from/with/by/in that "]];
+    var femHaec = [["haec ", "this (Subject) "], ["huius ","of this "], ["huius ", "to/for this "], ["hanc ", "that (Direct Object) "], ["hāc ", "from/with/by/in that "], ["haec ", "this (Subject) "], ["huius ","of this "], ["huius ", "to/for this "], ["hanc ", "that (Direct Object) "], ["hāc ", "from/with/by/in that "]];
+
     var femIllaPlural = [["illae ", "those (Subject) "], ["illārum ","of those "], ["illīs (Dative) ", "to/for those "], ["illās ", "those (Direct Object) "], ["illīs (Ablative) ", "from/with/by/in those "], ["illae ", "those (Subject) "], ["illārum ","of those "], ["illīs (Dative) ", "to/for those "], ["illās ", "those (Direct Object) "], ["illīs (Ablative) ", "from/with/by/in those "]];
+    var femHaecPlural = [["Hae ", "these (Subject) "], ["hārum ","of these "], ["hīs (Dative) ", "to/for these "], ["hās ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "], ["Hae ", "these (Subject) "], ["hārum ","of these "], ["hīs (Dative) ", "to/for these "], ["hās ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "]];
 
     var nounsSecond = [["serv", "servant"], ["hort", "garden"], ["lect", "couch"], ["coqu", "cook"], ["cerv", "deer"],["cib", "food"], ["anul", "ring"], ["domin", "master"], ["candidat", "candidate"],["lup", "wolf"]];
     var perEndingsSecond = ["us", "ī", "ō", "um", "ō", "us", "ī", "ō", "um", "ō"];
     var mascIlle = [["ille ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illum ", "that (Direct Object) "], ["illō ", "from/with/by/in that "], ["ille ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illum ", "that (Direct Object) "], ["illō ", "from/with/by/in that "]];
+    var mascHic = [["hic ", "this (Subject) "], ["huius ","of this "], ["huic ", "to/for this "], ["hunc ", "this (Direct Object) "], ["hōc ", "from/with/by/in this "], ["hic ", "this (Subject) "], ["huius ","of this "], ["huic ", "to/for this "], ["hunc ", "this (Direct Object) "], ["hōc ", "from/with/by/in this "]];
+
 
     var nounsSecondPlural = [["serv", "servants"], ["hort", "gardens"], ["lect", "couches"], ["argentari", "bankers"], ["coqu", "cooks"], ["cerv", "deer"],["cib", "food"], ["anul", "rings"], ["nunti", "messengers"], ["fili", "sons"],["domin", "masters"], ["venalici", "slave dealers"], ["candidat", "candidates"],["lup", "wolves"]];
     var perEndingsSecondPlural = ["ī", "ōrum", "īs", "ōs", "īs", "ī", "ōrum", "īs", "ōs", "īs"];
     var mascIllePlural = [["illī ", "those (Subject) "], ["illōrum ","of those "], ["illīs (Dative) ", "to/for those "], ["illōs ", "those (Direct Object) "], ["illīs (Ablative) ", "from/with/by/in those "], ["illī ", "those (Subject) "], ["illōrum ","of those "], ["illīs (Dative) ", "to/for those "], ["illōs ", "those (Direct Object) "], ["illīs (Ablative) ", "from/with/by/in those "]];
+    var mascHicPlural = [["hī ", "these (Subject) "], ["hōrum ","of these "], ["hīs (Dative) ", "to/for these "], ["hōs ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "], ["hī ", "these (Subject) "], ["hōrum ","of these "], ["hīs (Dative) ", "to/for these "], ["hōs ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "]];
 
     var nounsSecondNeuter = [["don", "gift"], ["pericul", "danger"], ["plaustr", "cart"], ["cubicul", "bedroom"], ["triclini", "dining room"]];
     var perEndingsSecondNeuter = ["um", "ī", "ō", "um", "ō", "um", "ī", "ō", "um", "ō"];
     var neutIllud = [["illud (Subject) ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illud ", "that (Direct Object) "], ["illō ", "from/with/by/in that "], ["illud ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illud ", "that (Direct Object) "], ["illō ", "from/with/by/in that "]];
+    var neutHoc = [["hoc (Subject) ", "this (Subject) "], ["huius ","of this "], ["huic ", "to/for this "], ["hoc ", "this (Direct Object) "], ["hōc ", "from/with/by/in this "], ["hoc (Subject) ", "this (Subject) "], ["huius ","of this "], ["huic ", "to/for this "], ["hoc ", "this (Direct Object) "], ["hōc ", "from/with/by/in this "]];
+
 
     var nounsSecondNeuterPlural = [["don", "gifts"], ["pericul", "dangers"], ["plaustr", "carts"], ["cubicul", "bedrooms"], ["triclini", "dining rooms"]];
     var perEndingsSecondNeuterPlural = ["a", "ōrum", "īs", "a", "īs", "a", "ōrum", "īs", "a", "īs"];
     var neutIlludPlural = [["illa (Subject) ", "those (Subject) "], ["illōrum ","of those "], ["illīs (Dative) ", "to/for those "], ["illa ", "those (Direct Object) "], ["illīs (Ablative) ", "from/with/by/in those "], ["illa (Subject) ", "those (Subject) "], ["illōrum ","of those "], ["illīs (Dative) ", "to/for those "], ["illa ", "those (Direct Object) "], ["illīs (Ablative) ", "from/with/by/in those "]];
+    var neutHocPlural = [["haec (Subject) ", "these (Subject) "], ["hōrum ","of these "], ["hīs (Dative) ", "to/for these "], ["haec ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "], ["haec (Subject) ", "these (Subject) "], ["hōrum ","of these "], ["hīs (Dative) ", "to/for these "], ["haec ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "]];
 
     var nounsThirdMasc = [["rex", "reg", "king"], ["labor", "labor", "work"], ["homo", "homin", "man"], ["canis", "can", "dog"], ["mercator", "mercator", "merchant"], ["pater", "patr", "father"]];
     var nounsThirdFem = [["pax", "pac", "peace"], ["virtus","virtut", "virtue"], ["civitas","civitat", "state"], ["canis", "can", "dog"], ["mater", "matr", "mother"]];
@@ -134,7 +143,13 @@ function gameFourTitle(){return game4Title;}
     femIlla = [["illa ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illam ", "that (Direct Object) "], ["illā ", "from/with/by/in that "], ["illa ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illam ", "that (Direct Object) "], ["illā ", "from/with/by/in that "]];
     femIllaPlural = [["illae ", "those (Subject) "], ["illārum ","of those "], ["illīs (Dative) ", "to/for those "], ["illās ", "those (Direct Object) "], ["illīs (Ablative) ", "from/with/by/in those "], ["illae ", "those (Subject) "], ["illārum ","of those "], ["illīs (Dative) ", "to/for those "], ["illās ", "those (Direct Object) "], ["illīs (Ablative) ", "from/with/by/in those "]];
 
+    femHaec = [["haec ", "this (Subject) "], ["huius ","of this "], ["huius ", "to/for this "], ["hanc ", "that (Direct Object) "], ["hāc ", "from/with/by/in that "], ["haec ", "this (Subject) "], ["huius ","of this "], ["huius ", "to/for this "], ["hanc ", "that (Direct Object) "], ["hāc ", "from/with/by/in that "]];
+    femHaecPlural = [["Hae ", "these (Subject) "], ["hārum ","of these "], ["hīs (Dative) ", "to/for these "], ["hās ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "], ["Hae ", "these (Subject) "], ["hārum ","of these "], ["hīs (Dative) ", "to/for these "], ["hās ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "]];
+
     mascIlle = [["ille ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illum ", "that (Direct Object) "], ["illō ", "from/with/by/in that "], ["ille ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illum ", "that (Direct Object) "], ["illō ", "from/with/by/in that "]];
+
+    mascHic = [["hic ", "this (Subject) "], ["huius ","of this "], ["huic ", "to/for this "], ["hunc ", "this (Direct Object) "], ["hōc ", "from/with/by/in this "], ["hic ", "this (Subject) "], ["huius ","of this "], ["huic ", "to/for this "], ["hunc ", "this (Direct Object) "], ["hōc ", "from/with/by/in this "]];
+    mascHicPlural = [["hī ", "these (Subject) "], ["hōrum ","of these "], ["hīs (Dative) ", "to/for these "], ["hōs ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "], ["hī ", "these (Subject) "], ["hōrum ","of these "], ["hīs (Dative) ", "to/for these "], ["hōs ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "]];
 
     nounsSecondPlural = [["serv", "servants"], ["hort", "gardens"], ["lect", "couches"], ["argentari", "bankers"], ["coqu", "cooks"], ["cerv", "deer"],["cib", "food"], ["anul", "rings"], ["nunti", "messengers"], ["fili", "sons"],["domin", "masters"], ["venalici", "slave dealers"], ["candidat", "candidates"],["lup", "wolves"]];
     perEndingsSecondPlural = ["ī", "ōrum", "īs", "ōs", "īs", "ī", "ōrum", "īs", "ōs", "īs"];
@@ -142,11 +157,14 @@ function gameFourTitle(){return game4Title;}
 
     nounsSecondNeuter = [["don", "gift"], ["pericul", "danger"], ["plaustr", "cart"], ["cubicul", "bedroom"], ["triclini", "dining room"]];
     perEndingsSecondNeuter = ["um", "ī", "ō", "um", "ō", "um", "ī", "ō", "um", "ō"];
-    neutIllud = [["illud (Subject) ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illud ", "that (Direct Object) "], ["illō ", "from/with/by/in that "], ["illud (Subject)", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illud ", "that (Direct Object) "], ["illō ", "from/with/by/in that "]];
+    neutIllud = [["illud (Subject) ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illud ", "that (Direct Object) "], ["illō ", "from/with/by/in that "], ["illud (Subject) ", "that (Subject) "], ["illius ","of that "], ["illī ", "to/for that "], ["illud ", "that (Direct Object) "], ["illō ", "from/with/by/in that "]];
 
     nounsSecondNeuterPlural = [["don", "gifts"], ["pericul", "dangers"], ["plaustr", "carts"], ["cubicul", "bedrooms"], ["triclini", "dining rooms"]];
     perEndingsSecondNeuterPlural = ["a", "ōrum", "īs", "a", "īs", "a", "ōrum", "īs", "a", "īs"];
     neutIlludPlural = [["illa (Subject) ", "those (Subject) "], ["illōrum ","of those "], ["illīs (Dative) ", "to/for those "], ["illa ", "those (Direct Object) "], ["illīs (Ablative) ", "from/with/by/in those "], ["illa (Subject) ", "those (Subject) "], ["illōrum ","of those "], ["illīs (Dative) ", "to/for those "], ["illa ", "those (Direct Object) "], ["illīs (Ablative) ", "from/with/by/in those "]];
+
+    neutHoc = [["hoc (Subject) ", "this (Subject) "], ["huius ","of this "], ["huic ", "to/for this "], ["hoc ", "this (Direct Object) "], ["hōc ", "from/with/by/in this "], ["hoc (Subject) ", "this (Subject) "], ["huius ","of this "], ["huic ", "to/for this "], ["hoc ", "this (Direct Object) "], ["hōc ", "from/with/by/in this "]];
+    neutHocPlural = [["haec (Subject) ", "these (Subject) "], ["hōrum ","of these "], ["hīs (Dative) ", "to/for these "], ["haec ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "], ["haec (Subject) ", "these (Subject) "], ["hōrum ","of these "], ["hīs (Dative) ", "to/for these "], ["haec ", "these (Direct Object) "], ["hīs (Ablative) ", "from/with/by/in these "]];
 
 
     }
@@ -295,7 +313,7 @@ function answerSetup(){
 function selectGame2(){
 
 	startButton.disabled = false;
- 	startButton.onclick = function(){firstDeclensionPluralNounShuffle()};
+ 	startButton.onclick = function(){thisGirl()};
  	startButton.innerHTML = "Click to Start " + game2Title;
     answerSetup();
     gameOverAudio();
@@ -524,6 +542,198 @@ mixUp[randomIllaIndex]();
 
 
 
+function thisGirl(){
+
+resetQuestions();
+
+countDownTimer();
+	timeleft = 15;
+	countdown = setInterval(countDownTimer,1000);
+
+
+startButton.disabled = true;
+
+
+shuffle(nounsFirst);
+shuffle(nounsFirstPlural);
+shuffle(nounsSecond);
+shuffle(nounsSecondPlural);
+shuffle(nounsSecondNeuter);
+shuffle(nounsSecondNeuterPlural);
+
+//shuffle(verbsFirstPer);
+
+//shuffle(femIlla);
+
+//shuffle(perEndingsFirstImp);
+//shuffle(perEndingsFirstPerfect);
+
+
+
+shuffle(answers);
+
+
+function shuffleMascHic(){
+document.getElementById("startButton").innerHTML =  mascHic[randIndex][1] + nounsSecond[0][1];
+
+
+document.getElementById(answers[0]).innerHTML = mascHic[randIndex][0] + nounsSecond[0][0] + perEndingsSecond[randIndex];
+
+
+document.getElementById(answers[1]).innerHTML = mascHic[randIndex + 1][0] + nounsSecond[0][0] + perEndingsSecond[randIndex + 1];
+
+document.getElementById(answers[2]).innerHTML = mascHic[randIndex + 2][0] + nounsSecond[0][0] + perEndingsSecond[randIndex + 2];
+
+document.getElementById(answers[3]).innerHTML = mascHicPlural[randIndex + 3][0] + nounsSecond[0][0] + perEndingsSecond[randIndex + 3];
+}
+
+
+function shuffleNeutHoc(){
+document.getElementById("startButton").innerHTML =  neutHoc[randIndex][1] + nounsSecondNeuter[0][1];
+
+
+document.getElementById(answers[0]).innerHTML = neutHoc[randIndex][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex];
+
+
+document.getElementById(answers[1]).innerHTML = neutHoc[randIndex + 1][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex + 1];
+
+document.getElementById(answers[2]).innerHTML = neutHoc[randIndex + 2][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex + 2];
+
+document.getElementById(answers[3]).innerHTML = neutHoc[randIndex + 3][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex + 3];
+}
+
+
+function shuffleNeutHocPlural(){
+document.getElementById("startButton").innerHTML =  neutHocPlural[randIndex][1] + nounsSecondNeuterPlural[0][1];
+
+
+document.getElementById(answers[0]).innerHTML = neutHocPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex];
+
+
+document.getElementById(answers[1]).innerHTML = neutHocPlural[randIndex + 1][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex + 1];
+
+document.getElementById(answers[2]).innerHTML = neutHocPlural[randIndex + 2][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex + 2];
+
+document.getElementById(answers[3]).innerHTML = neutHocPlural[randIndex + 3][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex + 3];
+}
+
+
+function shuffleFemHaec(){
+document.getElementById("startButton").innerHTML =  femHaec[randIndex][1] + nounsFirst[0][1];
+
+
+document.getElementById(answers[0]).innerHTML = femHaec[randIndex][0] + nounsFirst[0][0] + perEndingsFirst[randIndex];
+
+
+document.getElementById(answers[1]).innerHTML = femHaec[randIndex + 1][0] + nounsFirst[0][0] + perEndingsFirst[randIndex + 1];
+
+document.getElementById(answers[2]).innerHTML = femHaec[randIndex + 2][0] + nounsFirst[0][0] + perEndingsFirst[randIndex + 2];
+
+document.getElementById(answers[3]).innerHTML = femHaec[randIndex + 3][0] + nounsFirst[0][0] + perEndingsFirst[randIndex + 3];
+}
+
+
+
+
+
+function shuffleFemHaecPlural(){
+document.getElementById("startButton").innerHTML =  femHaecPlural[randIndex][1] + nounsFirstPlural[0][1];
+
+
+document.getElementById(answers[0]).innerHTML = femHaecPlural[randIndex][0] + nounsFirstPlural[0][0] + perEndingsFirstPlural[randIndex];
+
+
+document.getElementById(answers[1]).innerHTML = femHaecPlural[randIndex + 1][0] + nounsFirstPlural[0][0] + perEndingsFirstPlural[randIndex + 1];
+
+document.getElementById(answers[2]).innerHTML = femHaecPlural[randIndex + 2][0] + nounsFirstPlural[0][0] + perEndingsFirstPlural[randIndex + 2];
+
+document.getElementById(answers[3]).innerHTML = femHaecPlural[randIndex + 3][0] + nounsFirstPlural[0][0] + perEndingsFirstPlural[randIndex + 3];
+}
+
+function shuffleMascHicPlural(){
+document.getElementById("startButton").innerHTML =  mascHicPlural[randIndex][1] + nounsSecondPlural[0][1];
+
+
+document.getElementById(answers[0]).innerHTML = mascHicPlural[randIndex][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex];
+
+
+document.getElementById(answers[1]).innerHTML = mascHicPlural[randIndex + 1][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex + 1];
+
+document.getElementById(answers[2]).innerHTML = mascHicPlural[randIndex + 2][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex + 2];
+
+document.getElementById(answers[3]).innerHTML = mascHicPlural[randIndex + 3][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex + 3];
+}
+
+
+
+
+
+var randomIllaIndex = Math.floor(Math.random() * 6);
+var mixUp = [shuffleFemHaec, shuffleFemHaecPlural, shuffleMascHic, shuffleMascHicPlural, shuffleNeutHoc, shuffleNeutHocPlural];
+
+mixUp[randomIllaIndex]();
+
+
+
+
+
+	resetAnswerColors();
+
+     enableButtons();
+
+
+
+     //responseButton.innerHTML = "Hint!";
+
+     //responseButton.disabled = false;
+
+
+     //if (answerOne.value == "1") {document.getElementById("boxTwo").innerHTML = "HI!");}
+
+
+     //var newArray = shuffle(questions);
+
+ 	decrementCount();
+
+
+
+
+
+
+	if (count == 0){
+
+		gameOverAudio();
+
+		startButton.innerHTML = "Select a New Game!";
+
+
+
+
+		answerOne.innerHTML = game1Title;
+		answerTwo.innerHTML = game2Title;
+		answerThree.innerHTML = game3Title;
+		answerFour.innerHTML = game4Title;
+
+		document.getElementById("boxThree").innerHTML = "Score";
+		responseButton.innerHTML = "You earned " + points + " points!";
+		points = 0;
+
+		stopTimer();
+		document.getElementById("boxOne").innerHTML = "Timer";
+
+		answerOne.onclick = function(){selectGame1()};
+		answerTwo.onclick = function(){selectGame2()};
+		answerThree.onclick = function(){selectGame3()};
+		answerFour.onclick = function(){selectGame4()};
+
+		count = 11;
+
+
+    }
+
+
+
+}
 
 
 
@@ -989,7 +1199,14 @@ function clickedAnswerOne(){
 		document.getElementById("answerOne").innerHTML == mascIlle[randIndex][0] + nounsSecond[0][0] + perEndingsSecond[randIndex]||
     document.getElementById("answerOne").innerHTML == mascIllePlural[randIndex][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex]||
     document.getElementById("answerOne").innerHTML == neutIllud[randIndex][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex]|
-    document.getElementById("answerOne").innerHTML == neutIlludPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]
+    document.getElementById("answerOne").innerHTML == neutIlludPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]||
+
+    document.getElementById("answerOne").innerHTML == femHaec[randIndex][0] + nounsFirst[0][0] + perEndingsFirst[randIndex]||
+      document.getElementById("answerOne").innerHTML == femHaecPlural[randIndex][0] + nounsFirstPlural[0][0] + perEndingsFirstPlural[randIndex]||
+  		document.getElementById("answerOne").innerHTML == mascHic[randIndex][0] + nounsSecond[0][0] + perEndingsSecond[randIndex]||
+      document.getElementById("answerOne").innerHTML == mascHicPlural[randIndex][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex]||
+      document.getElementById("answerOne").innerHTML == neutHoc[randIndex][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex]||
+      document.getElementById("answerOne").innerHTML == neutHocPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]
     ){
 
 		correctAnswerAudio();
@@ -1043,7 +1260,14 @@ function clickedAnswerTwo(){
 		document.getElementById("answerTwo").innerHTML == mascIlle[randIndex][0] + nounsSecond[0][0] + perEndingsSecond[randIndex]||
     document.getElementById("answerTwo").innerHTML == mascIllePlural[randIndex][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex]||
     document.getElementById("answerTwo").innerHTML == neutIllud[randIndex][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex]|
-    document.getElementById("answerTwo").innerHTML == neutIlludPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]
+    document.getElementById("answerTwo").innerHTML == neutIlludPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]||
+
+    document.getElementById("answerTwo").innerHTML == femHaec[randIndex][0] + nounsFirst[0][0] + perEndingsFirst[randIndex]||
+      document.getElementById("answerTwo").innerHTML == femHaecPlural[randIndex][0] + nounsFirstPlural[0][0] + perEndingsFirstPlural[randIndex]||
+  		document.getElementById("answerTwo").innerHTML == mascHic[randIndex][0] + nounsSecond[0][0] + perEndingsSecond[randIndex]||
+      document.getElementById("answerTwo").innerHTML == mascHicPlural[randIndex][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex]||
+      document.getElementById("answerTwo").innerHTML == neutHoc[randIndex][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex]||
+      document.getElementById("answerTwo").innerHTML == neutHocPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]
     ){
 
 		correctAnswerAudio();
@@ -1094,7 +1318,14 @@ function clickedAnswerThree(){
 		document.getElementById("answerThree").innerHTML == mascIlle[randIndex][0] + nounsSecond[0][0] + perEndingsSecond[randIndex]||
     document.getElementById("answerThree").innerHTML == mascIllePlural[randIndex][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex]||
     document.getElementById("answerThree").innerHTML == neutIllud[randIndex][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex]|
-    document.getElementById("answerThree").innerHTML == neutIlludPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]
+    document.getElementById("answerThree").innerHTML == neutIlludPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]||
+
+    document.getElementById("answerThree").innerHTML == femHaec[randIndex][0] + nounsFirst[0][0] + perEndingsFirst[randIndex]||
+      document.getElementById("answerThree").innerHTML == femHaecPlural[randIndex][0] + nounsFirstPlural[0][0] + perEndingsFirstPlural[randIndex]||
+  		document.getElementById("answerThree").innerHTML == mascHic[randIndex][0] + nounsSecond[0][0] + perEndingsSecond[randIndex]||
+      document.getElementById("answerThree").innerHTML == mascHicPlural[randIndex][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex]||
+      document.getElementById("answerThree").innerHTML == neutHoc[randIndex][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex]||
+      document.getElementById("answerThree").innerHTML == neutHocPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]
     ){
 
 		correctAnswerAudio();
@@ -1146,7 +1377,14 @@ function clickedAnswerFour(){
 		document.getElementById("answerFour").innerHTML == mascIlle[randIndex][0] + nounsSecond[0][0] + perEndingsSecond[randIndex]||
     document.getElementById("answerFour").innerHTML == mascIllePlural[randIndex][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex]||
     document.getElementById("answerFour").innerHTML == neutIllud[randIndex][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex]||
-    document.getElementById("answerFour").innerHTML == neutIlludPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]
+    document.getElementById("answerFour").innerHTML == neutIlludPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]||
+
+    document.getElementById("answerFour").innerHTML == femHaec[randIndex][0] + nounsFirst[0][0] + perEndingsFirst[randIndex]||
+      document.getElementById("answerFour").innerHTML == femHaecPlural[randIndex][0] + nounsFirstPlural[0][0] + perEndingsFirstPlural[randIndex]||
+  		document.getElementById("answerFour").innerHTML == mascHic[randIndex][0] + nounsSecond[0][0] + perEndingsSecond[randIndex]||
+      document.getElementById("answerFour").innerHTML == mascHicPlural[randIndex][0] + nounsSecondPlural[0][0] + perEndingsSecondPlural[randIndex]||
+      document.getElementById("answerFour").innerHTML == neutHoc[randIndex][0] + nounsSecondNeuter[0][0] + perEndingsSecondNeuter[randIndex]||
+      document.getElementById("answerFour").innerHTML == neutHocPlural[randIndex][0] + nounsSecondNeuterPlural[0][0] + perEndingsSecondNeuterPlural[randIndex]
     ){
 
 		correctAnswerAudio();
